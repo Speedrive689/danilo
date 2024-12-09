@@ -1,0 +1,160 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" type="text/css" href="shopcss.css">
+</head>
+<style>
+    body{
+        font-family: 'Courier New',;
+        margin: 0px 100px 0px 100px;
+        padding: 0;
+        background-color:  darkgray;;;;
+    }
+    .container {
+	display: flex;
+	justify-content: center;
+	width: 50em;
+	background:lightgray;
+	box-shadow: 5px 5px 15px black;;;
+	border-radius: 10px;
+	padding: 50px;
+	max-width: 1000px;
+	margin: auto;
+}
+p {
+	font-size: 20em;
+	color:grey;;;
+	letter-spacing: 1px;
+}
+.images {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: auto;
+	white-space: nowrap;
+	margin-left: 80px;
+	}
+	 .imahe {
+		width: 85%;
+		 height: 85%;
+		 border-radius: 10px;
+		 margin-right: 20px;
+	}
+
+    .slideshow-buttons {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+}
+.slideshow-buttons span {
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background:rgba(241,241,241,1.00);
+}
+.pick{
+	text-transform:uppercase;
+	font-size: 12px;
+}
+.sizes{
+	display: flex;
+	justify-content: flex-start;
+	column-gap:10px;
+	flex-wrap: wrap;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+}
+.size{
+	border: none;
+	width: 80px;
+	height: 25px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	padding: 6px;
+	font-size: 12px;
+	transition: 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.size:hover{
+	background: grey;;;
+	color:black;;;
+	transform: scale(1.1)
+}
+.product{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-right: 20px;
+	white-space: nowrap;
+}
+#p{
+	text-transform: uppercase;
+}
+.par2{
+	font-size: 20px;
+}
+.description {
+	text-transform: none;
+	letter-spacing: 3;
+	margin-bottom: 17px;
+	color: rgba(20,16,16,1.00);
+	font-size: 13px;
+	line-height: 1.6em;
+	text-align: justify;
+}
+.buttons{
+	padding: 1px;
+	display: flex;
+	outline: 0;
+	border: 0;
+	border-radius: 2px;
+	letter-spacing: 1px;
+	color: white;
+	cursor: pointer;	
+}
+.buttons:hover{
+	transition: all 0.4s ease-in-out;
+}
+.add{
+	width: 150px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	text-transform: uppercase;
+}
+.back{
+	width: 50px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	text-transform: uppercase;
+}
+
+</style><body>
+<div class="container">
+<div class="images">
+<img alt="" src="download (6).jpg" class="imahe">
+	<div class="products">
+		<span></span>
+        <span></span>
+		<span></span>
+		<span></span>
+</div>
+<p class="pick">Choose Tire size</p>
+<div class="sizes">
+	<span class="size">195/55 R16</span>
+	<span class="size">205/45 R17</span>
+	<span class="size">205/55 R16</span>
+	</div>
+	</div>
+    <div class="product">
+		<p class="par2">Tires</p>
+		<h3>Michelin Pilot All Season</h3>
+		<h3>Php10,000–14,000</h3>
+		<p class="description"> This ultra-high-performance tire provides excellent grip on both dry and wet roads.
+		</p>
+		<div class="buttons">
+		<button class="add">Add to Cart</button>
+		<a href="final products website.html"><button class="back">Back</button></a>
+				</div>
+			</div>	
+	</div>
+</body>
+</html>

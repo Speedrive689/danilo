@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+header {
+    background: rgb(255, 255, 255);
+    color: black;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+header .hero h1 span {
+    color: grey;
+}
+
+header .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease,
+    transform: 0.3s ease
+}
+
+header .btn:hover {
+    background: #333;
+    color: black;
+    transform: scale(1.1);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    background: grey;
+}
+
+nav ul li {
+    margin: 015px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: lightgray;
+}
+
+.section {
+    padding: 50px 20px;
+    text-align: center;
+    background: lightgray;
+    margin: 20px 0;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slidein 15 ease-in-out forwards;
+}
+
+.Activities {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.activity-card {
+    background: darkgray;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease,box-shadow0.3 ease;
+    width: 300px;
+}
+
+.activity-card:hover {
+    transform: scale(1.05);
+    box-shadow: 08px 20px rgba(0,0,0,0.2);
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slidein {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer {
+    background: grey;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media(max-width:768px) {
+    .projects{
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-card {
+        width: 90%;
+    }
+}
+</style>
+<body>
+    <header>
+        <div class="hero">
+            <h1 class="fade-in">Hello,I'm <span>Danilo</span></h1>
+            <p class="fade-in">A friendly Web Developer With not good to much learning in code era</p>
+            <a href="#about" class="btn">Discover More</a>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="FRONT PAGES WEBSITE.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#activities">Activties</a></li>
+            <li><a href="#contact">Contact</a></li>
+            
+        </ul>
+    </nav>
+    <section id="about" class="section slide-in">
+        <h2>About</h2>
+        <p>I'm a developer are dedicated to create good,user friendly website and notisable website. My learning codes are HTML,CSS and JavaScript in this world of modern era.</p>
+    </section>
+    <section id="activities" class="section slide-in">
+        <h2>Activities</h2>
+        <div class="activities">
+            <div class="activity-card hover-grow">
+                <h3>Activity 1</h3>
+                <p>A description</p>
+            </div>
+            <div class="activity-card hover-grow">
+                <h3>Activity 2</h3>
+                <p>A description</p>
+            </div>
+            <div class="activity-card hover-grow">
+                <h3>Activity 3</h3>
+                <p>A description</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="coontact" class="section slide-in">
+        <h2>ContactMe</h2>
+        <p>Email:dandan20051005@gmail.com</p>
+        <p>Phone:09886711568</p>
+    </section>
+
+    <footer>
+        <p>&copy;2024danilo.All Rights Reserve</p>
+    </footer>
+</body>

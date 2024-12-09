@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Homepage</title>
+    <style>
+        #outerbox {
+            width: 450px;
+            overflow: hidden;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            background-size: cover;
+            background-position: center;
+            width: 450px;
+            margin: 50px auto;
+
+        }
+
+        #sliderbox {
+            position: relative;
+            display: flex;
+            width: 4500px;
+            height: 450px;
+            animation: slider 20s infinite;
+        }
+
+        @keyframes slider {
+
+            0%,
+            10% {
+                left: 0;
+            }
+
+            12.5%,
+            22.5% {
+                left: -450px;
+            }
+
+            25%,
+            35% {
+                left: -900px;
+            }
+
+            37.5%,
+            47.5% {
+                left: -1350px;
+            }
+
+            50%,
+            60% {
+                left: -1800px;
+            }
+
+            62.5%,
+            72.5% {
+                left: -2250px;
+            }
+
+            75%,
+            85% {
+                left: -2700px;
+            }
+
+            87.5%,
+            97.5% {
+                left: -3150px;
+            }
+
+            100% {
+                left: -3600px;
+            }
+        }
+
+        #sliderbox img {
+            width: 450px;
+            height: 450px;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        body {
+            font-family: cursive;
+            margin: 0px 100px 0px 100px;
+            padding: 0;
+            background-color: rgb(55, 101, 139);
+        }
+
+        .header {
+            background-color: skyblue;
+            color: #0a0a0a;
+            padding: 10px 0;
+            text-align: center;
+
+        }
+
+        .logo{
+            display:flex;
+            align-items:center;
+            justify-content: center;
+            gap: 20px;
+        }
+        .logo img {
+            max-width:100px;
+            height:auto;
+            width:250px;
+            border-radius: 100px;
+
+        }
+        img {
+            width: 700px;
+            height: 700px;
+            length: 100px;
+            margin: 0px;
+
+
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: #431c1c;
+        }
+
+        .nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .nav a:hover {
+            background-color: #555;
+        }
+
+        .main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer {
+            background-color: skyblue;
+            color: #070707;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+
+        }
+
+        .content {
+            width: 10%;
+            height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="DREAM SEARS.png" alt="logo">
+            
+        <h1>Danilo's Tire Store</h1></div>
+    </div>
+    <div class="nav">
+        <a href="My home.html">Home</a>
+        <a href="MY PRODUCTS.html">Product</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+    </div>
+    <div>
+        <div id="outerbox">
+            <div id="sliderbox">
+                <img src="att.4UhsjggjVFluyP7nSiRBf5OOjdEKzCJN3gFHOxBhF6A.png">
+                <img src="att.EMePeAq71KKueHc-dxaDK06tmkuiJpC6eiep_emH5hU.jpg">
+                <img src="att.EPJjNl_mhQZ_EFOGi9hYa3R0PSuU4deb4mrh0q7LH0A.jpg">
+                <img src="att.j-cNcsDkVLfHFutE03QSaDkNk3_HQSfwlBMdh3uEqfY.png">
+                <img src="att.LZSiGYmFYT-Rjppwlno1gRWCCeMI941q4XnxCPd2dEw.png">
+                <img src="att.mSns1n26usv2KTzjnpTiOLJZ8-GchSGt1BnwbwGaqj0.jpg">
+                <img src="att.Tqc5YVT3HCkJ2bAHzlcQ21euHqH3Nb1u3utMwoOMQl8.jpg">
+                <img src="att.XK_D4wDaCZ6D9gaFWwuJDS3AUHYUyiTpp_zG4vJxpmo.png">
+                <img src="att.Zr8wIhLgFEyB7cDiuv5qu7K6F6l_dAIWwL6eZmFNft0.jpg">
+                <img src="att.ZTqpuZTrZVuccV8vR1t-hBFichrGpw1Zd4KKowl3Z9A.jpg">
+            </div>
+        </div>
+
+        <div class="content"></div>
+        <div class="footer">
+            <p>&copy;All rights reserved.2024</p>
+        </div>
+
+</body>
+
+</html>

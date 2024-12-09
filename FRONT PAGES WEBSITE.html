@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Homepage</title>
+    <style>
+        #outerbox {
+            width: 450px;
+            overflow: hidden;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            background-size: cover;
+            background-position: center;
+            width: 450px;
+            margin: 50px auto;
+
+        }
+
+        #sliderbox {
+            position: relative;
+            display: flex;
+            width: 4500px;
+            height: 450px;
+            animation: slider 20s infinite;
+        }
+
+        @keyframes slider {
+
+            0%,
+            10% {
+                left: 0;
+            }
+
+            12.5%,
+            22.5% {
+                left: -450px;
+            }
+
+            25%,
+            35% {
+                left: -900px;
+            }
+
+            37.5%,
+            47.5% {
+                left: -1350px;
+            }
+
+            50%,
+            60% {
+                left: -1800px;
+            }
+
+            62.5%,
+            72.5% {
+                left: -2250px;
+            }
+
+            75%,
+            85% {
+                left: -2700px;
+            }
+
+            87.5%,
+            97.5% {
+                left: -3150px;
+            }
+
+            100% {
+                left: -3600px;
+            }
+        }
+
+        #sliderbox img {
+            width: 450px;
+            height: 450px;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        body {
+            font-family: cursive;
+            padding: 0;
+            background-color: lightgray;
+        }
+
+        .header {
+            background-color: white;
+            color: black;
+            padding: 10px 0;
+            text-align: center;
+
+        }
+
+        .logo{
+            display:flex;
+            align-items:center;
+            justify-content: center;
+            gap: 20px;
+        }
+        .logo img {
+            max-width:100px;
+            height:auto;
+            width:250px;
+            border-radius: 100px;
+
+        }
+        img {
+            width: 700px;
+            height: 700px;
+            length: 100px;
+           
+
+
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: grey;
+        }
+
+        .nav a {
+            color: white;
+            padding: 15px 145px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .nav a:hover {
+            background-color: #555;
+        }
+
+        .dropdown-btn {
+    background-color: grey;
+    color: white;
+    font-family: cursive;
+    padding: 14px 20px;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.dropdown-btn:hover {
+    background-color: grey;
+}
+
+
+.dropdown-content {
+    display: none; 
+    position: absolute;
+    background-color: grey;
+    min-width: 100px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 5px 28px;
+    text-decoration: none;
+    display: block;
+    font-size: 11.5px;
+    white-space: nowrap;
+}
+
+.dropdown-content a:hover {
+    background-color: lightgray;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+               .footer {
+            background-image: url('nice-wood-kitchen_1048-4893.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            transition: background-image 0.5 ease;
+            color: #dbd1cb;
+            font-size: 20px;
+            text-shadow: 4px 4px 10px #9c3809;
+            text-align: center;
+            padding: 10px 0PX;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+           
+            
+        }
+        .main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer {
+            background-color: lightgray;
+            color: black;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+
+        }
+
+        .content {
+            width: 10%;
+            height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+           
+            <img src="c:\Users\Lenovo\Documents\tire store website\final logo.png" alt="logo">
+            
+        <h1>Speedrive Tire Store</h1></div>
+    </div>
+    <div class="nav">
+        <a href="FRONT PAGES WEBSITE.html">Home</a>
+        <a href="final products website.html">Products</a>
+        <a href="log-in form.html">Log-In</a>
+        <a href="About website.html">About Us</a>
+    </div>
+    <div>
+        <center><h1>Enhancing Your Drive,Every Mile.</h1></center>
+        <div id="outerbox">
+            <div id="sliderbox">
+                <img src="michelin pilot sport 4s.jpg">
+                <img src="download (6).jpg">
+                <img src="download (7).jpg">
+                <img src="download (8).jpg">
+                <img src="download (6).jpg">
+                <img src="download (1).jpg">
+                <img src="download (2).jpg">
+                <img src="download (3).jpg">
+                <img src="download (4).jpg">
+                <img src="download (5).jpg">
+            </div>
+        </div>
+        <center><h3>Your ultimate destination for top-quality tires and exceptional service! Trust us to keep you rolling smoothly and safely!</h3></center>
+
+        <div class="content"></div>
+        <div class="footer">
+           
+        </div>
+
+</body>
+
+</html>

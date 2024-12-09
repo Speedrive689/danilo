@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Basic CSS for new elements */
+        body {
+            font-family: cursive;
+            line-height: 1.6;
+            background-color: rgb(55, 101, 139);;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            background:skyblue;
+            color: #ddd;
+            padding: 10px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav {
+            flex: 1;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around; /* Space out nav items evenly */
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            color: #000000;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        .search-container {
+            display: flex; /* Make the search bar and button inline */
+            align-items: center;
+        }
+
+        .search-bar {
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            width: 100px; /* Fixed width for the search bar */
+        }
+
+        .search-button {
+            background-color: #ddd;
+            color: #000000;
+            border: none;
+            padding: 10px 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        .search-button:hover {
+            background-color: #333;
+        }
+
+        .main-content {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #000000;
+            padding: 15px 20px;
+            display: block;
+        }
+
+        main {
+            display: flex;
+            padding: 20px;
+        }
+
+        aside {
+            width: 20%;
+            padding-right: 20px;
+            border-right: 1px solid #ddd;
+        }
+
+        aside h2 {
+            font-size: 1.5em;
+            margin-bottom: 3px;
+        }
+
+        aside ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        aside ul li {
+            margin-bottom: 3px;
+        }
+
+        aside ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .products {
+            width: 75%;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+            padding-left: 5px;
+        }
+
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .product-card img {
+            max-width: 60%;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+
+        .product-card h3 {
+            color: #f56342;
+            font-size: 1.1em;
+            margin: 0 0 5px;
+        }
+
+        .product-card p {
+            margin: 5px 0;
+        }
+
+        .buy-button {
+            background-color: #28a745;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .buy-button:hover {
+            background-color: #218838;
+        }
+
+        footer {
+            background-color: skyblue;
+            color: #000000;
+            padding: 10px 0;
+        }
+
+        footer .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        footer .social a {
+            color: #000000;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <h1>DANILO'S TIRE STORE</h1>
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                    
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" class="search-bar" placeholder="Search for products...">
+                <button class="search-button">Search</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <aside>
+            <h2>Categories</h2>
+            <ul>
+                <li><a href="#">Motorcycles</a></li>
+                <li><a href="#">Suv</a></li>
+                <li><a href="#">Pickup</a></li>
+                <li><a href="#">Bus</a></li>
+                <li><a href="#">Trucks</a></li>
+            </ul>
+        </aside>
+        <section class="products">
+            <div class="product-card">
+                <img src="https://www.maxxis.com.ph/images/PREMITRA-HP-5.png" alt="Product Image">
+                <h3>CHECKOUT</h3>
+                <p>MAXXIS RADIAL</p>
+                <p></p>
+                <p>₱6,195</p>
+                <a href="product-page.html" class="buy-button">Buy</a>
+            </div>
+            <div class="product-card">
+                <img src="" alt="Product Image">
+                <h3>Just In</h3>
+                <p></p>
+                <p></p>
+                <p>₱6,195</p>
+                <a href="product-page.html" class="buy-button">Buy</a>
+            </div>
+           
+            <div class="product-card">
+                <img src="" alt="Product Image">
+                <h3></h3>
+                <p></p>
+                <p></p>
+                <p>₱6,195</p>
+                <a href="product-page.html" class="buy-button">Buy</a>
+            </div>
+            <div class="product-card">
+                <img src="" alt="Product Image">
+                <h3></h3>
+                <p></p>
+                <p></p>
+                <p>₱6,195</p>
+                <a href="product-page.html" class="buy-button">Buy</a>
+            </div>
+            <div class="product-card">
+                <img src="" alt="Product Image">
+                <h3></h3>
+                <p></p>
+                <p></p>
+                <p>₱6,195</p>
+                <a href="product-page.html" class="buy-button">Buy</a>
+            </div>
+            <div class="product-card">
+                <img src="" alt="Product Image">
+                <h3></h3>
+                <p></p>
+                <p></p>
+                <p>₱6,195</p>
+                <a href="product-page.html" class="buy-button">Buy</a>
+            </div>
+            <div class="product-card">
+                <img src="women7.jpg" alt="Product Image">
+                <h3>Just In</h3>
+                <p>Nike Air Force 1 '07</p>
+                <p>Men's Shoes</p>
+                <p>₱6,195</p>
+                <a href="product-page.html" class="buy-button">Buy</a>
+            </div>
+            <div class="product-card">
+                <img src="" alt="Product Image">
+                <h3></h3>
+                <p></p>
+                <p></p>
+                <p>₱6,195</p>
+                <a href="product-page.html" class="buy-button">Buy</a>
+            </div>
+            <div class="product-card">
+                <img src="" alt="Product Image">
+                <h3></h3>
+                <p></p>
+                <p></p>
+                <p>₱6,195</p>
+                <a href="product-page.html" class="buy-button">Buy</a>
+            </div>
+            <div class="product-card">
+                <img src="" alt="Product Image">
+                <h3></h3>
+                <p></p>
+                <p></p>
+                <p>₱6,195</p>
+                <a href="product-page.html" class="buy-button">Buy</a>
+            </div>
+            <div class="product-card">
+            <img src="" alt="Product Image">
+            <h3></h3>
+            <p></p>
+            <p></p>
+            <p>₱6,195</p>
+            <a href="product-page.html" class="buy-button">Buy</a>
+        </div>
+        <div class="product-card">
+                <img src="" alt="Product Image">
+                <h3></h3>
+                <p></p>
+                <p></p>
+                <p>₱</p>
+                <a href="product-page.html" class="buy-button">Buy</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div>&copy;All rights reserved.2024</div>
+            <div class="social">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

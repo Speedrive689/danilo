@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: cursive;
+            margin: 0px 0px 58px 0px;
+            padding: 0;
+            background-color: white;
+        }
+        .container {
+            background-color: lightgray;
+        }
+        .header {
+            background-image: url('drawing-table-with-plate-fruit-vegetables-picture-plate-with-spoon_886588-16683.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: black;
+            padding: 10px 0;
+            text-align: center;
+            background-color: white;
+        }
+        header img {
+            width: 20px;
+            height: 300px;
+        }
+        /* Navigation Styles */
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: grey;
+        }
+        .nav a {
+            color: white;
+            padding: 15px 165px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .nav a:hover {
+            background-color: #fcfaf9;
+        }
+
+        .gallery {
+            perspective: 1000px;
+        }
+
+        .gallery-container {
+            width: 500px;
+            height: 500px;
+            position: relative;
+            transform-style: preserve-3d;
+            animation: rotate 10s infinite linear;
+            gap: 10px;
+        }
+
+        .gallery-image {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            
+        }
+
+        .gallery-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .gallery-image:nth-child(1) {
+            transform: rotateY(0deg);
+        }
+
+        .gallery-image:nth-child(2) {
+            transform: rotateY(90deg);
+        }
+
+        .gallery-image:nth-child(3) {
+            transform: rotateY(180deg);
+        }
+
+        .gallery-image:nth-child(4) {
+            transform: rotateY(270deg);
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotateY(0deg);100
+            }
+
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
+
+        /* Gallery Styles */
+        .thumbnail-gallery {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+            padding: 20px;
+        }
+        .thumbnail {
+            overflow: hidden;
+            border-radius: 8px;
+            transition: transform 0.3s;
+            width: 200px;
+            height: 205px;
+            position: relative;
+        }
+        .thumbnail img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        .thumbnail:hover {
+            transform: scale(1.1);
+        }
+        .description {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: grey;
+            color: white;
+            text-align: center;
+            font-size: 15px;
+            padding: 1px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .thumbnail:hover .description {
+            opacity: 1;
+        }
+        /* Category Specific Styles */
+        .category {
+            margin-top: 50px;
+            padding: 20px;
+            text-align: center;
+            background-color: #f1f1f1;
+        }
+        .category h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-family: cursive;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>Speedrive Tire Store</h1>
+        </div>
+
+        <!-- Navigation -->
+        <div class="nav">
+            <a href="home.html">Home</a>
+            <a href="#product">Products</a>
+            <a href="#contact">Log-In</a>
+            <a href="about.html">About Us</a>
+        </div>
+
+        <div class="gallery">
+            <center>
+            <div class="gallery-container">
+                <div class="gallery-image"><img src="c:\Users\Lenovo\Pictures\Saved Pictures\x-ice snow michelin.jpg" alt="image 1"></div>
+                <div class="gallery-image"><img src="c:\Users\Lenovo\Pictures\Saved Pictures\download.jpg" alt="image 2"></div>
+                <div class="gallery-image"><img src="c:\Users\Lenovo\Pictures\Saved Pictures\images (2).jfif" alt="image 3"></div>
+                <div class="gallery-image"><img src="c:\Users\Lenovo\Pictures\Saved Pictures\download (3).jpg" alt="image 4"></div>
+            </div>
+            </center>
+
+        <!-- Categories Section -->
+        <div class="category" id="performance-tires">
+            <h2>Performance Tires</h2>
+            <div class="thumbnail-gallery">
+                <div class="thumbnail"><a href="product1.html"><img src="michelin-pilot-sport.jpg" alt="Performance Tire"></a><div class="description">Michelin Pilot Sport</div></div>
+                <div class="thumbnail"><a href="product2.html"><img src="michelin-pilot-all-season.jpg" alt="Performance Tire"></a><div class="description">Michelin Pilot All Season</div></div>
+                <div class="thumbnail"><a href="product6.html"><img src="mud-terrain-tire2.jpg" alt="Mud Terrain Tire"></a><div class="description">Mud Terrain Tire 2</div></div>
+                <div class="thumbnail"><a href="product6.html"><img src="mud-terrain-tire2.jpg" alt="Mud Terrain Tire"></a><div class="description">Mud Terrain Tire 2</div></div>
+                <div class="thumbnail"><a href="product6.html"><img src="mud-terrain-tire2.jpg" alt="Mud Terrain Tire"></a><div class="description">Mud Terrain Tire 2</div></div>
+                <!-- More products can be added here -->
+            </div>
+        </div>
+
+        <div class="category" id="all-terrain-tires">
+            <h2>All Terrain Tires</h2>
+            <div class="thumbnail-gallery">
+                <div class="thumbnail"><a href="product3.html"><img src="all-terrain-tire1.jpg" alt="All Terrain Tire"></a><div class="description">All Terrain Tire 1</div></div>
+                <div class="thumbnail"><a href="product4.html"><img src="all-terrain-tire2.jpg" alt="All Terrain Tire"></a><div class="description">All Terrain Tire 2</div></div>
+                <div class="thumbnail"><a href="product6.html"><img src="mud-terrain-tire2.jpg" alt="Mud Terrain Tire"></a><div class="description">Mud Terrain Tire 2</div></div>
+                <div class="thumbnail"><a href="product6.html"><img src="mud-terrain-tire2.jpg" alt="Mud Terrain Tire"></a><div class="description">Mud Terrain Tire 2</div></div>
+                <div class="thumbnail"><a href="product6.html"><img src="mud-terrain-tire2.jpg" alt="Mud Terrain Tire"></a><div class="description">Mud Terrain Tire 2</div></div>
+                <!-- More products can be added here -->
+            </div>
+        </div>
+
+        <div class="category" id="mud-terrain-tires">
+            <h2>Mud Terrain Tires</h2>
+            <div class="thumbnail-gallery">
+                <div class="thumbnail"><a href="product5.html"><img src="mud-terrain-tire1.jpg" alt="Mud Terrain Tire"></a><div class="description">Mud Terrain Tire 1</div></div>
+                <div class="thumbnail"><a href="product6.html"><img src="mud-terrain-tire2.jpg" alt="Mud Terrain Tire"></a><div class="description">Mud Terrain Tire 2</div></div>
+                <div class="thumbnail"><a href="product6.html"><img src="mud-terrain-tire2.jpg" alt="Mud Terrain Tire"></a><div class="description">Mud Terrain Tire 2</div></div>
+                <div class="thumbnail"><a href="product6.html"><img src="mud-terrain-tire2.jpg" alt="Mud Terrain Tire"></a><div class="description">Mud Terrain Tire 2</div></div>
+                <div class="thumbnail"><a href="product6.html"><img src="mud-terrain-tire2.jpg" alt="Mud Terrain Tire"></a><div class="description">Mud Terrain Tire 2</div></div>
+                <!-- More products can be added here -->
+            </div>
+        </div>
+
+        <div class="category" id="mud-terrain-tires">
+            <h2>Mud Terrain Tires</h2>
+            <div class="thumbnail-gallery">
+                <div class="thumbnail"><a href="product5.html"><img src="mud-terrain-tire1.jpg" alt="Mud Terrain Tire"></a><div class="description">Mud Terrain Tire 1</div></div>
+                <div class="thumbnail"><a href="product6.html"><img src="mud-terrain-tire2.jpg" alt="Mud Terrain Tire"></a><div class="description">Mud Terrain Tire 2</div></div>
+                <div class="thumbnail"><a href="product6.html"><img src="mud-terrain-tire2.jpg" alt="Mud Terrain Tire"></a><div class="description">Mud Terrain Tire 2</div></div>
+                <div class="thumbnail"><a href="product6.html"><img src="mud-terrain-tire2.jpg" alt="Mud Terrain Tire"></a><div class="description">Mud Terrain Tire 2</div></div>
+                <div class="thumbnail"><a href="product6.html"><img src="mud-terrain-tire2.jpg" alt="Mud Terrain Tire"></a><div class="description">Mud Terrain Tire 2</div></div>
+                <!-- More products can be added here -->
+            </div>
+        </div>
+
+        <div class="category" id="mud-terrain-tires">
+            <h2>Mud Terrain Tires</h2>
+            <div class="thumbnail-gallery">
+                <div class="thumbnail"><a href="product5.html"><img src="mud-terrain-tire1.jpg" alt="Mud Terrain Tire"></a><div class="description">Mud Terrain Tire 1</div></div>
+                <div class="thumbnail"><a href="product6.html"><img src="mud-terrain-tire2.jpg" alt="Mud Terrain Tire"></a><div class="description">Mud Terrain Tire 2</div></div>
+                <div class="thumbnail"><a href="product6.html"><img src="mud-terrain-tire2.jpg" alt="Mud Terrain Tire"></a><div class="description">Mud Terrain Tire 2</div></div>
+                <div class="thumbnail"><a href="product6.html"><img src="mud-terrain-tire2.jpg" alt="Mud Terrain Tire"></a><div class="description">Mud Terrain Tire 2</div></div>
+                <div class="thumbnail"><a href="product6.html"><img src="mud-terrain-tire2.jpg" alt="Mud Terrain Tire"></a><div class="description">Mud Terrain Tire 2</div></div>
+                <!-- More products can be added here -->
+            </div>
+        </div>
+
+        <div class="category" id="mud-terrain-tires">
+            <h2>Mud Terrain Tires</h2>
+            <div class="thumbnail-gallery">
+                <div class="thumbnail"><a href="product5.html"><img src="mud-terrain-tire1.jpg" alt="Mud Terrain Tire"></a><div class="description">Mud Terrain Tire 1</div></div>
+                <div class="thumbnail"><a href="product6.html"><img src="mud-terrain-tire2.jpg" alt="Mud Terrain Tire"></a><div class="description">Mud Terrain Tire 2</div></div>
+                <div class="thumbnail"><a href="product6.html"><img src="mud-terrain-tire2.jpg" alt="Mud Terrain Tire"></a><div class="description">Mud Terrain Tire 2</div></div>
+                <div class="thumbnail"><a href="product6.html"><img src="mud-terrain-tire2.jpg" alt="Mud Terrain Tire"></a><div class="description">Mud Terrain Tire 2</div></div>
+                <div class="thumbnail"><a href="product6.html"><img src="mud-terrain-tire2.jpg" alt="Mud Terrain Tire"></a><div class="description">Mud Terrain Tire 2</div></div>
+                <!-- More products can be added here -->
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>&copy; All rights reserved. 2024</p>
+        </div>
+    </div>
+</body>
+</html>
